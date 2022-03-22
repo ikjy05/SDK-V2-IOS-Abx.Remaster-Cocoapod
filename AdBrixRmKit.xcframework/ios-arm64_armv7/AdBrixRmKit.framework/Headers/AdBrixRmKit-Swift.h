@@ -582,6 +582,15 @@ typedef SWIFT_ENUM(NSInteger, Completion, open) {
 };
 
 
+SWIFT_CLASS("_TtC11AdBrixRmKit7DfnUtil")
+@interface DfnUtil : NSObject
++ (NSString * _Nonnull)getLanguage SWIFT_WARN_UNUSED_RESULT;
++ (BOOL)getPushEnable SWIFT_WARN_UNUSED_RESULT;
++ (BOOL)getOsPushEnable SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC11AdBrixRmKit11KakaoButton")
 @interface KakaoButton : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -592,15 +601,6 @@ SWIFT_CLASS("_TtC11AdBrixRmKit11KakaoButton")
 
 
 
-
-
-SWIFT_CLASS("_TtC11AdBrixRmKit4Util")
-@interface Util : NSObject
-+ (NSString * _Nonnull)getLanguage SWIFT_WARN_UNUSED_RESULT;
-+ (BOOL)getPushEnable SWIFT_WARN_UNUSED_RESULT;
-+ (BOOL)getOsPushEnable SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
 
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
@@ -1191,6 +1191,15 @@ typedef SWIFT_ENUM(NSInteger, Completion, open) {
 };
 
 
+SWIFT_CLASS("_TtC11AdBrixRmKit7DfnUtil")
+@interface DfnUtil : NSObject
++ (NSString * _Nonnull)getLanguage SWIFT_WARN_UNUSED_RESULT;
++ (BOOL)getPushEnable SWIFT_WARN_UNUSED_RESULT;
++ (BOOL)getOsPushEnable SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC11AdBrixRmKit11KakaoButton")
 @interface KakaoButton : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -1201,15 +1210,6 @@ SWIFT_CLASS("_TtC11AdBrixRmKit11KakaoButton")
 
 
 
-
-
-SWIFT_CLASS("_TtC11AdBrixRmKit4Util")
-@interface Util : NSObject
-+ (NSString * _Nonnull)getLanguage SWIFT_WARN_UNUSED_RESULT;
-+ (BOOL)getPushEnable SWIFT_WARN_UNUSED_RESULT;
-+ (BOOL)getOsPushEnable SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
 
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
