@@ -322,6 +322,7 @@ enum DfnInAppMessageFetchMode : NSInteger;
 @protocol DfnInAppMessageAutoFetchDelegate;
 @protocol AdBrixRMDeeplinkDelegate;
 @protocol AdBrixRMDeferredDeeplinkDelegate;
+@class DfnResult;
 
 SWIFT_CLASS("_TtC11AdBrixRmKit8AdBrixRM")
 @interface AdBrixRM : NSObject
@@ -446,6 +447,7 @@ SWIFT_CLASS("_TtC11AdBrixRmKit8AdBrixRM")
 - (void)setDeeplinkDelegateWithDelegate:(id <AdBrixRMDeeplinkDelegate> _Nonnull)delegate;
 - (void)setDeferredDeeplinkDelegateWithDelegate:(id <AdBrixRMDeferredDeeplinkDelegate> _Nonnull)delegate;
 - (void)setDeviceId:(NSString * _Nonnull)device_id;
+- (void)flushAllEventsWithCompletion:(void (^ _Nullable)(DfnResult * _Nonnull))completion;
 - (void)didBecomeActive;
 - (void)willResignActive;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -720,6 +722,16 @@ SWIFT_CLASS("_TtC11AdBrixRmKit21DfnInAppMessageResult")
 @property (nonatomic, readonly) BOOL isSucceeded;
 - (NSArray<DfnInAppMessage *> * _Nullable)getData SWIFT_WARN_UNUSED_RESULT;
 - (NSError * _Nullable)getError SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC11AdBrixRmKit9DfnResult")
+@interface DfnResult : NSObject
+@property (nonatomic, readonly) BOOL isSuccess;
+@property (nonatomic, readonly) NSError * _Nullable error;
+- (nonnull instancetype)initWithIsSuccess:(BOOL)isSuccess error:(NSError * _Nullable)error OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1098,6 +1110,7 @@ enum DfnInAppMessageFetchMode : NSInteger;
 @protocol DfnInAppMessageAutoFetchDelegate;
 @protocol AdBrixRMDeeplinkDelegate;
 @protocol AdBrixRMDeferredDeeplinkDelegate;
+@class DfnResult;
 
 SWIFT_CLASS("_TtC11AdBrixRmKit8AdBrixRM")
 @interface AdBrixRM : NSObject
@@ -1222,6 +1235,7 @@ SWIFT_CLASS("_TtC11AdBrixRmKit8AdBrixRM")
 - (void)setDeeplinkDelegateWithDelegate:(id <AdBrixRMDeeplinkDelegate> _Nonnull)delegate;
 - (void)setDeferredDeeplinkDelegateWithDelegate:(id <AdBrixRMDeferredDeeplinkDelegate> _Nonnull)delegate;
 - (void)setDeviceId:(NSString * _Nonnull)device_id;
+- (void)flushAllEventsWithCompletion:(void (^ _Nullable)(DfnResult * _Nonnull))completion;
 - (void)didBecomeActive;
 - (void)willResignActive;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -1496,6 +1510,16 @@ SWIFT_CLASS("_TtC11AdBrixRmKit21DfnInAppMessageResult")
 @property (nonatomic, readonly) BOOL isSucceeded;
 - (NSArray<DfnInAppMessage *> * _Nullable)getData SWIFT_WARN_UNUSED_RESULT;
 - (NSError * _Nullable)getError SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC11AdBrixRmKit9DfnResult")
+@interface DfnResult : NSObject
+@property (nonatomic, readonly) BOOL isSuccess;
+@property (nonatomic, readonly) NSError * _Nullable error;
+- (nonnull instancetype)initWithIsSuccess:(BOOL)isSuccess error:(NSError * _Nullable)error OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1874,6 +1898,7 @@ enum DfnInAppMessageFetchMode : NSInteger;
 @protocol DfnInAppMessageAutoFetchDelegate;
 @protocol AdBrixRMDeeplinkDelegate;
 @protocol AdBrixRMDeferredDeeplinkDelegate;
+@class DfnResult;
 
 SWIFT_CLASS("_TtC11AdBrixRmKit8AdBrixRM")
 @interface AdBrixRM : NSObject
@@ -1998,6 +2023,7 @@ SWIFT_CLASS("_TtC11AdBrixRmKit8AdBrixRM")
 - (void)setDeeplinkDelegateWithDelegate:(id <AdBrixRMDeeplinkDelegate> _Nonnull)delegate;
 - (void)setDeferredDeeplinkDelegateWithDelegate:(id <AdBrixRMDeferredDeeplinkDelegate> _Nonnull)delegate;
 - (void)setDeviceId:(NSString * _Nonnull)device_id;
+- (void)flushAllEventsWithCompletion:(void (^ _Nullable)(DfnResult * _Nonnull))completion;
 - (void)didBecomeActive;
 - (void)willResignActive;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -2272,6 +2298,16 @@ SWIFT_CLASS("_TtC11AdBrixRmKit21DfnInAppMessageResult")
 @property (nonatomic, readonly) BOOL isSucceeded;
 - (NSArray<DfnInAppMessage *> * _Nullable)getData SWIFT_WARN_UNUSED_RESULT;
 - (NSError * _Nullable)getError SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC11AdBrixRmKit9DfnResult")
+@interface DfnResult : NSObject
+@property (nonatomic, readonly) BOOL isSuccess;
+@property (nonatomic, readonly) NSError * _Nullable error;
+- (nonnull instancetype)initWithIsSuccess:(BOOL)isSuccess error:(NSError * _Nullable)error OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
