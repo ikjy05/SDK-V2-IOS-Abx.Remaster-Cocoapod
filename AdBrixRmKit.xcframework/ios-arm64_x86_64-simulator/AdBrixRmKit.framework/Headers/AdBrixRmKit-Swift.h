@@ -264,26 +264,6 @@ SWIFT_CLASS("_TtC11AdBrixRmKit18AbxRemotePushModel")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-typedef SWIFT_ENUM(NSInteger, AbxSubscriptionError, open) {
-  AbxSubscriptionErrorRESULT_CODE_INVALID_TOKEN = 4001,
-  AbxSubscriptionErrorRESULT_CODE_INVALID_REQUEST = 4002,
-  AbxSubscriptionErrorRESULT_CODE_BLOCKED_ACCOUNT = 4003,
-  AbxSubscriptionErrorRESULT_CODE_UNAUTHORIZED = 4004,
-  AbxSubscriptionErrorRESULT_CODE_TERMINATED_API = 4005,
-  AbxSubscriptionErrorRESULT_CODE_RATE_LIMIT_EXCEEDED = 4006,
-  AbxSubscriptionErrorRESULT_CODE_WRONG_PROPERTY = 4007,
-  AbxSubscriptionErrorRESULT_CODE_INTERNAL_SERVER_ERROR = 5001,
-  AbxSubscriptionErrorRESULT_CODE_SERVICE_MAINTENANCE = 5002,
-  AbxSubscriptionErrorRESULT_CODE_SERVER_BUSY = 5003,
-  AbxSubscriptionErrorRESULT_CODE_PROPERTY_REQUIRED = -253,
-  AbxSubscriptionErrorRESULT_CODE_USER_ID_REQUIRED = -254,
-  AbxSubscriptionErrorRESULT_CODE_UNKNOWN_ERROR = -255,
-  AbxSubscriptionErrorRESULT_CODE_NETWORK_ERROR = -256,
-  AbxSubscriptionErrorRESULT_CODE_NO_DATA_TO_GET = -257,
-  AbxSubscriptionErrorRESULT_CODE_SDK_DISABLED = -258,
-};
-static NSString * _Nonnull const AbxSubscriptionErrorDomain = @"AdBrixRmKit.AbxSubscriptionError";
-
 @class KakaoButton;
 
 SWIFT_CLASS("_TtC11AdBrixRmKit13ActionContent")
@@ -361,6 +341,7 @@ enum AdBrixEventUploadTimeInterval : NSInteger;
 @class NSURL;
 enum AdBrixGenderType : NSInteger;
 @class AdBrixRmAttrModel;
+@class SetCiProfileResult;
 enum AdBrixRmSignUpChannel : NSInteger;
 enum AdBrixRmInviteChannel : NSInteger;
 @class AdBrixRmCommerceProductModel;
@@ -412,8 +393,10 @@ SWIFT_CLASS("_TtC11AdBrixRmKit8AdBrixRM")
 - (enum AdBrixGenderType)convertGender:(NSInteger)code SWIFT_WARN_UNUSED_RESULT;
 - (void)setUserPropertiesWithAttrWithAttrModel:(AdBrixRmAttrModel * _Nonnull)attrModel;
 - (void)clearUserProperties SWIFT_DEPRECATED;
-- (void)setKakaoIdWithKakaoId:(NSString * _Nonnull)kakaoId;
-- (void)setUserCiWithAttrWithAttrModel:(AdBrixRmAttrModel * _Nonnull)attrModel;
+- (void)setKakaoIdWithKakaoId:(NSString * _Nonnull)kakaoId SWIFT_DEPRECATED_MSG("use setKakaoId(kakaoId:completion:) instead");
+- (void)setPhoneNumberWithNumber:(NSString * _Nonnull)number completion:(void (^ _Nonnull)(SetCiProfileResult * _Nonnull))completion;
+- (void)setKakaoIdWithKakaoId:(NSString * _Nonnull)kakaoId completion:(void (^ _Nonnull)(SetCiProfileResult * _Nonnull))completion;
+- (void)setUserCiWithAttrWithAttrModel:(AdBrixRmAttrModel * _Nonnull)attrModel SWIFT_DEPRECATED;
 - (void)setLocationWithLatitude:(double)latitude longitude:(double)longitude SWIFT_DEPRECATED;
 - (void)eventWithEventName:(NSString * _Nonnull)eventName;
 - (void)eventWithAttrWithEventName:(NSString * _Nonnull)eventName value:(AdBrixRmAttrModel * _Nonnull)value;
@@ -928,6 +911,19 @@ SWIFT_CLASS("_TtC11AdBrixRmKit7DfnUtil")
 @end
 
 
+SWIFT_CLASS("_TtC11AdBrixRmKit21GetAllCiProfileResult")
+@interface GetAllCiProfileResult : DfnResult
+- (nonnull instancetype)initWithIsSuccess:(BOOL)isSuccess error:(NSError * _Nullable)error SWIFT_UNAVAILABLE;
+@end
+
+
+SWIFT_CLASS("_TtC11AdBrixRmKit18GetCiProfileResult")
+@interface GetCiProfileResult : DfnResult
+@property (nonatomic, readonly, copy) NSString * _Nullable value;
+- (nonnull instancetype)initWithIsSuccess:(BOOL)isSuccess error:(NSError * _Nullable)error SWIFT_UNAVAILABLE;
+@end
+
+
 SWIFT_CLASS("_TtC11AdBrixRmKit21GetSubscriptionResult")
 @interface GetSubscriptionResult : DfnResult
 @property (nonatomic, readonly, strong) SubscriptionStatus * _Nullable value;
@@ -946,6 +942,12 @@ SWIFT_CLASS("_TtC11AdBrixRmKit11KakaoButton")
 @property (nonatomic, readonly, copy) NSString * _Nullable chatEvent;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC11AdBrixRmKit18SetCiProfileResult")
+@interface SetCiProfileResult : DfnResult
+- (nonnull instancetype)initWithIsSuccess:(BOOL)isSuccess error:(NSError * _Nullable)error SWIFT_UNAVAILABLE;
 @end
 
 
@@ -1020,6 +1022,27 @@ SWIFT_CLASS("_TtC11AdBrixRmKit25SubscriptionStatusBuilder")
 
 
 
+
+typedef SWIFT_ENUM(NSInteger, UserProfileServerError, open) {
+  UserProfileServerErrorRESULT_CODE_INVALID_TOKEN = 4001,
+  UserProfileServerErrorRESULT_CODE_INVALID_REQUEST = 4002,
+  UserProfileServerErrorRESULT_CODE_BLOCKED_ACCOUNT = 4003,
+  UserProfileServerErrorRESULT_CODE_UNAUTHORIZED = 4004,
+  UserProfileServerErrorRESULT_CODE_TERMINATED_API = 4005,
+  UserProfileServerErrorRESULT_CODE_RATE_LIMIT_EXCEEDED = 4006,
+  UserProfileServerErrorRESULT_CODE_WRONG_PROPERTY = 4007,
+  UserProfileServerErrorRESULT_CODE_INTERNAL_SERVER_ERROR = 5001,
+  UserProfileServerErrorRESULT_CODE_SERVICE_MAINTENANCE = 5002,
+  UserProfileServerErrorRESULT_CODE_SERVER_BUSY = 5003,
+  UserProfileServerErrorRESULT_CODE_PROPERTY_REQUIRED = -253,
+  UserProfileServerErrorRESULT_CODE_USER_ID_REQUIRED = -254,
+  UserProfileServerErrorRESULT_CODE_UNKNOWN_ERROR = -255,
+  UserProfileServerErrorRESULT_CODE_NETWORK_ERROR = -256,
+  UserProfileServerErrorRESULT_CODE_NO_DATA_TO_GET = -257,
+  UserProfileServerErrorRESULT_CODE_SDK_DISABLED = -258,
+  UserProfileServerErrorRESULT_CODE_SDK_STATUS = -259,
+};
+static NSString * _Nonnull const UserProfileServerErrorDomain = @"AdBrixRmKit.UserProfileServerError";
 
 #endif
 #if defined(__cplusplus)
@@ -1295,26 +1318,6 @@ SWIFT_CLASS("_TtC11AdBrixRmKit18AbxRemotePushModel")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-typedef SWIFT_ENUM(NSInteger, AbxSubscriptionError, open) {
-  AbxSubscriptionErrorRESULT_CODE_INVALID_TOKEN = 4001,
-  AbxSubscriptionErrorRESULT_CODE_INVALID_REQUEST = 4002,
-  AbxSubscriptionErrorRESULT_CODE_BLOCKED_ACCOUNT = 4003,
-  AbxSubscriptionErrorRESULT_CODE_UNAUTHORIZED = 4004,
-  AbxSubscriptionErrorRESULT_CODE_TERMINATED_API = 4005,
-  AbxSubscriptionErrorRESULT_CODE_RATE_LIMIT_EXCEEDED = 4006,
-  AbxSubscriptionErrorRESULT_CODE_WRONG_PROPERTY = 4007,
-  AbxSubscriptionErrorRESULT_CODE_INTERNAL_SERVER_ERROR = 5001,
-  AbxSubscriptionErrorRESULT_CODE_SERVICE_MAINTENANCE = 5002,
-  AbxSubscriptionErrorRESULT_CODE_SERVER_BUSY = 5003,
-  AbxSubscriptionErrorRESULT_CODE_PROPERTY_REQUIRED = -253,
-  AbxSubscriptionErrorRESULT_CODE_USER_ID_REQUIRED = -254,
-  AbxSubscriptionErrorRESULT_CODE_UNKNOWN_ERROR = -255,
-  AbxSubscriptionErrorRESULT_CODE_NETWORK_ERROR = -256,
-  AbxSubscriptionErrorRESULT_CODE_NO_DATA_TO_GET = -257,
-  AbxSubscriptionErrorRESULT_CODE_SDK_DISABLED = -258,
-};
-static NSString * _Nonnull const AbxSubscriptionErrorDomain = @"AdBrixRmKit.AbxSubscriptionError";
-
 @class KakaoButton;
 
 SWIFT_CLASS("_TtC11AdBrixRmKit13ActionContent")
@@ -1392,6 +1395,7 @@ enum AdBrixEventUploadTimeInterval : NSInteger;
 @class NSURL;
 enum AdBrixGenderType : NSInteger;
 @class AdBrixRmAttrModel;
+@class SetCiProfileResult;
 enum AdBrixRmSignUpChannel : NSInteger;
 enum AdBrixRmInviteChannel : NSInteger;
 @class AdBrixRmCommerceProductModel;
@@ -1443,8 +1447,10 @@ SWIFT_CLASS("_TtC11AdBrixRmKit8AdBrixRM")
 - (enum AdBrixGenderType)convertGender:(NSInteger)code SWIFT_WARN_UNUSED_RESULT;
 - (void)setUserPropertiesWithAttrWithAttrModel:(AdBrixRmAttrModel * _Nonnull)attrModel;
 - (void)clearUserProperties SWIFT_DEPRECATED;
-- (void)setKakaoIdWithKakaoId:(NSString * _Nonnull)kakaoId;
-- (void)setUserCiWithAttrWithAttrModel:(AdBrixRmAttrModel * _Nonnull)attrModel;
+- (void)setKakaoIdWithKakaoId:(NSString * _Nonnull)kakaoId SWIFT_DEPRECATED_MSG("use setKakaoId(kakaoId:completion:) instead");
+- (void)setPhoneNumberWithNumber:(NSString * _Nonnull)number completion:(void (^ _Nonnull)(SetCiProfileResult * _Nonnull))completion;
+- (void)setKakaoIdWithKakaoId:(NSString * _Nonnull)kakaoId completion:(void (^ _Nonnull)(SetCiProfileResult * _Nonnull))completion;
+- (void)setUserCiWithAttrWithAttrModel:(AdBrixRmAttrModel * _Nonnull)attrModel SWIFT_DEPRECATED;
 - (void)setLocationWithLatitude:(double)latitude longitude:(double)longitude SWIFT_DEPRECATED;
 - (void)eventWithEventName:(NSString * _Nonnull)eventName;
 - (void)eventWithAttrWithEventName:(NSString * _Nonnull)eventName value:(AdBrixRmAttrModel * _Nonnull)value;
@@ -1959,6 +1965,19 @@ SWIFT_CLASS("_TtC11AdBrixRmKit7DfnUtil")
 @end
 
 
+SWIFT_CLASS("_TtC11AdBrixRmKit21GetAllCiProfileResult")
+@interface GetAllCiProfileResult : DfnResult
+- (nonnull instancetype)initWithIsSuccess:(BOOL)isSuccess error:(NSError * _Nullable)error SWIFT_UNAVAILABLE;
+@end
+
+
+SWIFT_CLASS("_TtC11AdBrixRmKit18GetCiProfileResult")
+@interface GetCiProfileResult : DfnResult
+@property (nonatomic, readonly, copy) NSString * _Nullable value;
+- (nonnull instancetype)initWithIsSuccess:(BOOL)isSuccess error:(NSError * _Nullable)error SWIFT_UNAVAILABLE;
+@end
+
+
 SWIFT_CLASS("_TtC11AdBrixRmKit21GetSubscriptionResult")
 @interface GetSubscriptionResult : DfnResult
 @property (nonatomic, readonly, strong) SubscriptionStatus * _Nullable value;
@@ -1977,6 +1996,12 @@ SWIFT_CLASS("_TtC11AdBrixRmKit11KakaoButton")
 @property (nonatomic, readonly, copy) NSString * _Nullable chatEvent;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC11AdBrixRmKit18SetCiProfileResult")
+@interface SetCiProfileResult : DfnResult
+- (nonnull instancetype)initWithIsSuccess:(BOOL)isSuccess error:(NSError * _Nullable)error SWIFT_UNAVAILABLE;
 @end
 
 
@@ -2051,6 +2076,27 @@ SWIFT_CLASS("_TtC11AdBrixRmKit25SubscriptionStatusBuilder")
 
 
 
+
+typedef SWIFT_ENUM(NSInteger, UserProfileServerError, open) {
+  UserProfileServerErrorRESULT_CODE_INVALID_TOKEN = 4001,
+  UserProfileServerErrorRESULT_CODE_INVALID_REQUEST = 4002,
+  UserProfileServerErrorRESULT_CODE_BLOCKED_ACCOUNT = 4003,
+  UserProfileServerErrorRESULT_CODE_UNAUTHORIZED = 4004,
+  UserProfileServerErrorRESULT_CODE_TERMINATED_API = 4005,
+  UserProfileServerErrorRESULT_CODE_RATE_LIMIT_EXCEEDED = 4006,
+  UserProfileServerErrorRESULT_CODE_WRONG_PROPERTY = 4007,
+  UserProfileServerErrorRESULT_CODE_INTERNAL_SERVER_ERROR = 5001,
+  UserProfileServerErrorRESULT_CODE_SERVICE_MAINTENANCE = 5002,
+  UserProfileServerErrorRESULT_CODE_SERVER_BUSY = 5003,
+  UserProfileServerErrorRESULT_CODE_PROPERTY_REQUIRED = -253,
+  UserProfileServerErrorRESULT_CODE_USER_ID_REQUIRED = -254,
+  UserProfileServerErrorRESULT_CODE_UNKNOWN_ERROR = -255,
+  UserProfileServerErrorRESULT_CODE_NETWORK_ERROR = -256,
+  UserProfileServerErrorRESULT_CODE_NO_DATA_TO_GET = -257,
+  UserProfileServerErrorRESULT_CODE_SDK_DISABLED = -258,
+  UserProfileServerErrorRESULT_CODE_SDK_STATUS = -259,
+};
+static NSString * _Nonnull const UserProfileServerErrorDomain = @"AdBrixRmKit.UserProfileServerError";
 
 #endif
 #if defined(__cplusplus)

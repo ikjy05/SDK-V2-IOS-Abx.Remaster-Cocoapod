@@ -120,7 +120,7 @@ import os
   @objc public func build() -> AdBrixRmKit.SubscriptionStatus
   @objc deinit
 }
-@objc public enum AbxSubscriptionError : Swift.Int, Swift.Error {
+@objc public enum UserProfileServerError : Swift.Int, Swift.Error {
   case RESULT_CODE_INVALID_TOKEN = 4001
   case RESULT_CODE_INVALID_REQUEST = 4002
   case RESULT_CODE_BLOCKED_ACCOUNT = 4003
@@ -137,6 +137,7 @@ import os
   case RESULT_CODE_NETWORK_ERROR = -256
   case RESULT_CODE_NO_DATA_TO_GET = -257
   case RESULT_CODE_SDK_DISABLED = -258
+  case RESULT_CODE_SDK_STATUS = -259
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public static var _nsErrorDomain: Swift.String {
@@ -146,7 +147,7 @@ import os
     get
   }
 }
-extension AdBrixRmKit.AbxSubscriptionError : Foundation.LocalizedError {
+extension AdBrixRmKit.UserProfileServerError : Foundation.LocalizedError {
   public var errorDescription: Swift.String? {
     get
   }
@@ -235,6 +236,17 @@ extension AdBrixRmKit.AbxSubscriptionError : Foundation.LocalizedError {
   @objc public func setAttrDataBool(_ key: Swift.String, _ value: Swift.Bool)
   @objc deinit
 }
+@objc @_hasMissingDesignatedInitializers @objcMembers public class GetCiProfileResult : AdBrixRmKit.DfnResult {
+  @objc final public let value: Swift.String?
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class GetAllCiProfileResult : AdBrixRmKit.DfnResult {
+  final public let value: [Swift.String : Any?]?
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class SetCiProfileResult : AdBrixRmKit.DfnResult {
+  @objc deinit
+}
 @_inheritsConvenienceInitializers @objc public class DfnUtil : ObjectiveC.NSObject {
   @objc public static func getLanguage() -> Swift.String
   @objc public static func getPushEnable() -> Swift.Bool
@@ -285,7 +297,11 @@ extension AdBrixRmKit.AbxSubscriptionError : Foundation.LocalizedError {
   @objc public func setUserPropertiesWithAttr(attrModel: AdBrixRmKit.AdBrixRmAttrModel)
   @available(*, deprecated)
   @objc public func clearUserProperties()
+  @available(*, deprecated, message: "use setKakaoId(kakaoId:completion:) instead")
   @objc public func setKakaoId(kakaoId: Swift.String)
+  @objc public func setPhoneNumber(number: Swift.String, completion: @escaping (AdBrixRmKit.SetCiProfileResult) -> ())
+  @objc public func setKakaoId(kakaoId: Swift.String, completion: @escaping (AdBrixRmKit.SetCiProfileResult) -> ())
+  @available(*, deprecated)
   @objc public func setUserCiWithAttr(attrModel: AdBrixRmKit.AdBrixRmAttrModel)
   @available(*, deprecated)
   @objc public func setLocation(latitude: Swift.Double, longitude: Swift.Double)
@@ -407,6 +423,14 @@ extension AdBrixRmKit.AbxSubscriptionError : Foundation.LocalizedError {
   #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, *)
   public func setSubscriptionStatus(status: AdBrixRmKit.SubscriptionStatus) async -> AdBrixRmKit.SetSubscriptionResult
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, *)
+  public func setKakaoId(kakaoId: Swift.String) async -> AdBrixRmKit.SetCiProfileResult
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, *)
+  public func setPhoneNumber(number: Swift.String) async -> AdBrixRmKit.SetCiProfileResult
   #endif
   @objc public enum AdBrixEventUploadCountInterval : Swift.Int {
     case MIN = 10, NORMAL = 30, MAX = 60
@@ -606,9 +630,9 @@ extension AdBrixRmKit.AbxSubscriptionError : Foundation.LocalizedError {
 extension AdBrixRmKit.SubscriptionStatus._Type : Swift.Equatable {}
 extension AdBrixRmKit.SubscriptionStatus._Type : Swift.Hashable {}
 extension AdBrixRmKit.SubscriptionStatus._Type : Swift.RawRepresentable {}
-extension AdBrixRmKit.AbxSubscriptionError : Swift.Equatable {}
-extension AdBrixRmKit.AbxSubscriptionError : Swift.Hashable {}
-extension AdBrixRmKit.AbxSubscriptionError : Swift.RawRepresentable {}
+extension AdBrixRmKit.UserProfileServerError : Swift.Equatable {}
+extension AdBrixRmKit.UserProfileServerError : Swift.Hashable {}
+extension AdBrixRmKit.UserProfileServerError : Swift.RawRepresentable {}
 extension AdBrixRmKit.ActionHistoryIdType : Swift.Equatable {}
 extension AdBrixRmKit.ActionHistoryIdType : Swift.Hashable {}
 extension AdBrixRmKit.ActionHistoryIdType : Swift.RawRepresentable {}
