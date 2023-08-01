@@ -3402,7 +3402,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(isSuccess:error:)",
+            "printedName": "init(isSuccess:resultCode:resultMessage:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -3419,27 +3419,39 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.Error?",
+                "printedName": "Swift.Int?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Error",
-                    "printedName": "Swift.Error",
-                    "usr": "s:s5ErrorP"
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@AdBrixRmKit@objc(cs)GetSubscriptionResult(im)initWithIsSuccess:error:",
-            "mangledName": "$s11AdBrixRmKit21GetSubscriptionResultC9isSuccess5errorACSb_s5Error_pSgtcfc",
+            "usr": "s:11AdBrixRmKit21GetSubscriptionResultC9isSuccess10resultCode0J7MessageACSb_SiSgSSSgtcfc",
+            "mangledName": "$s11AdBrixRmKit21GetSubscriptionResultC9isSuccess10resultCode0J7MessageACSb_SiSgSSSgtcfc",
             "moduleName": "AdBrixRmKit",
             "overriding": true,
             "implicit": true,
-            "objc_name": "initWithIsSuccess:error:",
             "declAttributes": [
-              "ObjC",
               "Override"
             ],
             "init_kind": "Designated"
@@ -3454,10 +3466,10 @@
           "ObjCMembers",
           "ObjC"
         ],
-        "superclassUsr": "c:@M@AdBrixRmKit@objc(cs)DfnResult",
+        "superclassUsr": "c:@M@AdBrixRmKit@objc(cs)CIResult",
         "hasMissingDesignatedInitializers": true,
         "superclassNames": [
-          "AdBrixRmKit.DfnResult",
+          "AdBrixRmKit.CIResult",
           "ObjectiveC.NSObject"
         ],
         "conformances": [
@@ -3516,53 +3528,6 @@
         "kind": "TypeDecl",
         "name": "SetSubscriptionResult",
         "printedName": "SetSubscriptionResult",
-        "children": [
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(isSuccess:error:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "SetSubscriptionResult",
-                "printedName": "AdBrixRmKit.SetSubscriptionResult",
-                "usr": "c:@M@AdBrixRmKit@objc(cs)SetSubscriptionResult"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.Error?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Error",
-                    "printedName": "Swift.Error",
-                    "usr": "s:s5ErrorP"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@AdBrixRmKit@objc(cs)SetSubscriptionResult(im)initWithIsSuccess:error:",
-            "mangledName": "$s11AdBrixRmKit21SetSubscriptionResultC9isSuccess5errorACSb_s5Error_pSgtcfc",
-            "moduleName": "AdBrixRmKit",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "initWithIsSuccess:error:",
-            "declAttributes": [
-              "ObjC",
-              "Override"
-            ],
-            "init_kind": "Designated"
-          }
-        ],
         "declKind": "Class",
         "usr": "c:@M@AdBrixRmKit@objc(cs)SetSubscriptionResult",
         "mangledName": "$s11AdBrixRmKit21SetSubscriptionResultC",
@@ -3572,10 +3537,11 @@
           "ObjCMembers",
           "ObjC"
         ],
-        "superclassUsr": "c:@M@AdBrixRmKit@objc(cs)DfnResult",
+        "superclassUsr": "c:@M@AdBrixRmKit@objc(cs)CIResult",
         "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
         "superclassNames": [
-          "AdBrixRmKit.DfnResult",
+          "AdBrixRmKit.CIResult",
           "ObjectiveC.NSObject"
         ],
         "conformances": [
@@ -7713,7 +7679,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(isSuccess:error:)",
+            "printedName": "init(isSuccess:resultCode:resultMessage:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -7730,27 +7696,39 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.Error?",
+                "printedName": "Swift.Int?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Error",
-                    "printedName": "Swift.Error",
-                    "usr": "s:s5ErrorP"
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@AdBrixRmKit@objc(cs)GetCiProfileResult(im)initWithIsSuccess:error:",
-            "mangledName": "$s11AdBrixRmKit18GetCiProfileResultC9isSuccess5errorACSb_s5Error_pSgtcfc",
+            "usr": "s:11AdBrixRmKit18GetCiProfileResultC9isSuccess10resultCode0K7MessageACSb_SiSgSSSgtcfc",
+            "mangledName": "$s11AdBrixRmKit18GetCiProfileResultC9isSuccess10resultCode0K7MessageACSb_SiSgSSSgtcfc",
             "moduleName": "AdBrixRmKit",
             "overriding": true,
             "implicit": true,
-            "objc_name": "initWithIsSuccess:error:",
             "declAttributes": [
-              "ObjC",
               "Override"
             ],
             "init_kind": "Designated"
@@ -7765,10 +7743,10 @@
           "ObjCMembers",
           "ObjC"
         ],
-        "superclassUsr": "c:@M@AdBrixRmKit@objc(cs)DfnResult",
+        "superclassUsr": "c:@M@AdBrixRmKit@objc(cs)CIResult",
         "hasMissingDesignatedInitializers": true,
         "superclassNames": [
-          "AdBrixRmKit.DfnResult",
+          "AdBrixRmKit.CIResult",
           "ObjectiveC.NSObject"
         ],
         "conformances": [
@@ -7937,7 +7915,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(isSuccess:error:)",
+            "printedName": "init(isSuccess:resultCode:resultMessage:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -7954,27 +7932,39 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.Error?",
+                "printedName": "Swift.Int?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Error",
-                    "printedName": "Swift.Error",
-                    "usr": "s:s5ErrorP"
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@AdBrixRmKit@objc(cs)GetAllCiProfileResult(im)initWithIsSuccess:error:",
-            "mangledName": "$s11AdBrixRmKit21GetAllCiProfileResultC9isSuccess5errorACSb_s5Error_pSgtcfc",
+            "usr": "s:11AdBrixRmKit21GetAllCiProfileResultC9isSuccess10resultCode0L7MessageACSb_SiSgSSSgtcfc",
+            "mangledName": "$s11AdBrixRmKit21GetAllCiProfileResultC9isSuccess10resultCode0L7MessageACSb_SiSgSSSgtcfc",
             "moduleName": "AdBrixRmKit",
             "overriding": true,
             "implicit": true,
-            "objc_name": "initWithIsSuccess:error:",
             "declAttributes": [
-              "ObjC",
               "Override"
             ],
             "init_kind": "Designated"
@@ -7989,10 +7979,10 @@
           "ObjCMembers",
           "ObjC"
         ],
-        "superclassUsr": "c:@M@AdBrixRmKit@objc(cs)DfnResult",
+        "superclassUsr": "c:@M@AdBrixRmKit@objc(cs)CIResult",
         "hasMissingDesignatedInitializers": true,
         "superclassNames": [
-          "AdBrixRmKit.DfnResult",
+          "AdBrixRmKit.CIResult",
           "ObjectiveC.NSObject"
         ],
         "conformances": [
@@ -8051,53 +8041,6 @@
         "kind": "TypeDecl",
         "name": "SetCiProfileResult",
         "printedName": "SetCiProfileResult",
-        "children": [
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(isSuccess:error:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "SetCiProfileResult",
-                "printedName": "AdBrixRmKit.SetCiProfileResult",
-                "usr": "c:@M@AdBrixRmKit@objc(cs)SetCiProfileResult"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.Error?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Error",
-                    "printedName": "Swift.Error",
-                    "usr": "s:s5ErrorP"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@AdBrixRmKit@objc(cs)SetCiProfileResult(im)initWithIsSuccess:error:",
-            "mangledName": "$s11AdBrixRmKit18SetCiProfileResultC9isSuccess5errorACSb_s5Error_pSgtcfc",
-            "moduleName": "AdBrixRmKit",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "initWithIsSuccess:error:",
-            "declAttributes": [
-              "ObjC",
-              "Override"
-            ],
-            "init_kind": "Designated"
-          }
-        ],
         "declKind": "Class",
         "usr": "c:@M@AdBrixRmKit@objc(cs)SetCiProfileResult",
         "mangledName": "$s11AdBrixRmKit18SetCiProfileResultC",
@@ -8107,10 +8050,11 @@
           "ObjCMembers",
           "ObjC"
         ],
-        "superclassUsr": "c:@M@AdBrixRmKit@objc(cs)DfnResult",
+        "superclassUsr": "c:@M@AdBrixRmKit@objc(cs)CIResult",
         "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
         "superclassNames": [
-          "AdBrixRmKit.DfnResult",
+          "AdBrixRmKit.CIResult",
           "ObjectiveC.NSObject"
         ],
         "conformances": [
@@ -8720,8 +8664,8 @@
             "mangledName": "$s11AdBrixRmKit9DfnResultC9isSuccessSbvp",
             "moduleName": "AdBrixRmKit",
             "declAttributes": [
-              "HasStorage",
               "Final",
+              "HasStorage",
               "AccessControl",
               "ObjC"
             ],
@@ -8778,8 +8722,8 @@
             "mangledName": "$s11AdBrixRmKit9DfnResultC5errors5Error_pSgvp",
             "moduleName": "AdBrixRmKit",
             "declAttributes": [
-              "HasStorage",
               "Final",
+              "HasStorage",
               "AccessControl",
               "ObjC"
             ],
@@ -8891,6 +8835,338 @@
         "declKind": "Class",
         "usr": "c:@M@AdBrixRmKit@objc(cs)DfnResult",
         "mangledName": "$s11AdBrixRmKit9DfnResultC",
+        "moduleName": "AdBrixRmKit",
+        "declAttributes": [
+          "AccessControl",
+          "ObjCMembers",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CIResult",
+        "printedName": "CIResult",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "isSuccess",
+            "printedName": "isSuccess",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AdBrixRmKit@objc(cs)CIResult(py)isSuccess",
+            "mangledName": "$s11AdBrixRmKit8CIResultC9isSuccessSbvp",
+            "moduleName": "AdBrixRmKit",
+            "declAttributes": [
+              "HasStorage",
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AdBrixRmKit@objc(cs)CIResult(im)isSuccess",
+                "mangledName": "$s11AdBrixRmKit8CIResultC9isSuccessSbvg",
+                "moduleName": "AdBrixRmKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "resultCode",
+            "printedName": "resultCode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11AdBrixRmKit8CIResultC10resultCodeSiSgvp",
+            "mangledName": "$s11AdBrixRmKit8CIResultC10resultCodeSiSgvp",
+            "moduleName": "AdBrixRmKit",
+            "declAttributes": [
+              "HasStorage",
+              "Final",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11AdBrixRmKit8CIResultC10resultCodeSiSgvg",
+                "mangledName": "$s11AdBrixRmKit8CIResultC10resultCodeSiSgvg",
+                "moduleName": "AdBrixRmKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "resultMessage",
+            "printedName": "resultMessage",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AdBrixRmKit@objc(cs)CIResult(py)resultMessage",
+            "mangledName": "$s11AdBrixRmKit8CIResultC13resultMessageSSSgvp",
+            "moduleName": "AdBrixRmKit",
+            "declAttributes": [
+              "HasStorage",
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AdBrixRmKit@objc(cs)CIResult(im)resultMessage",
+                "mangledName": "$s11AdBrixRmKit8CIResultC13resultMessageSSSgvg",
+                "moduleName": "AdBrixRmKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(isSuccess:resultCode:resultMessage:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CIResult",
+                "printedName": "AdBrixRmKit.CIResult",
+                "usr": "c:@M@AdBrixRmKit@objc(cs)CIResult"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11AdBrixRmKit8CIResultC9isSuccess10resultCode0H7MessageACSb_SiSgSSSgtcfc",
+            "mangledName": "$s11AdBrixRmKit8CIResultC9isSuccess10resultCode0H7MessageACSb_SiSgSSSgtcfc",
+            "moduleName": "AdBrixRmKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CIResult",
+                "printedName": "AdBrixRmKit.CIResult",
+                "usr": "c:@M@AdBrixRmKit@objc(cs)CIResult"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@AdBrixRmKit@objc(cs)CIResult(im)init",
+            "mangledName": "$s11AdBrixRmKit8CIResultCACycfc",
+            "moduleName": "AdBrixRmKit",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@AdBrixRmKit@objc(cs)CIResult",
+        "mangledName": "$s11AdBrixRmKit8CIResultC",
         "moduleName": "AdBrixRmKit",
         "declAttributes": [
           "AccessControl",
@@ -10437,7 +10713,8 @@
             "objc_name": "setPhoneNumberWithNumber:completion:",
             "declAttributes": [
               "AccessControl",
-              "ObjC"
+              "ObjC",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -10483,7 +10760,8 @@
             "objc_name": "setKakaoIdWithKakaoId:completion:",
             "declAttributes": [
               "AccessControl",
-              "ObjC"
+              "ObjC",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -14761,10 +15039,12 @@
             "usr": "c:@M@AdBrixRmKit@objc(cs)AdBrixRM(im)setInAppMessageFetchModeWithMode:",
             "mangledName": "$s11AdBrixRmKit0aB2RMC24setInAppMessageFetchMode4modeyAA03DfnghijK0O_tF",
             "moduleName": "AdBrixRmKit",
+            "deprecated": true,
             "objc_name": "setInAppMessageFetchModeWithMode:",
             "declAttributes": [
               "AccessControl",
-              "ObjC"
+              "ObjC",
+              "Available"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -15174,7 +15454,8 @@
             "intro_iOS": "13",
             "declAttributes": [
               "AccessControl",
-              "Available"
+              "Available",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -15203,7 +15484,8 @@
             "intro_iOS": "13",
             "declAttributes": [
               "AccessControl",
-              "Available"
+              "Available",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -24714,13 +24996,6 @@
       "value": "\"AdBrixRmKit.GetSubscriptionResult\""
     },
     {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Model\/SubscriptionStatus.swift",
-      "kind": "StringLiteral",
-      "offset": 9917,
-      "length": 21,
-      "value": "\"AdBrixRmKit.SetSubscriptionResult\""
-    },
-    {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Data\/Network\/ApiConnectionManager.swift",
       "kind": "IntegerLiteral",
       "offset": 554,
@@ -24746,7 +25021,7 @@
       "kind": "StringLiteral",
       "offset": 227,
       "length": 9,
-      "value": "\"2.4.0.5\""
+      "value": "\"2.4.0.6\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
@@ -28867,16 +29142,9 @@
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Model\/CIProfile.swift",
       "kind": "StringLiteral",
-      "offset": 874,
+      "offset": 988,
       "length": 21,
       "value": "\"AdBrixRmKit.GetAllCiProfileResult\""
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Model\/CIProfile.swift",
-      "kind": "StringLiteral",
-      "offset": 1153,
-      "length": 18,
-      "value": "\"AdBrixRmKit.SetCiProfileResult\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Data\/InAppMessage\/IAMConstants.swift",
@@ -29595,37 +29863,44 @@
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Utils\/DfnUtil.swift",
       "kind": "IntegerLiteral",
-      "offset": 20631,
+      "offset": 20639,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Utils\/DfnUtil.swift",
       "kind": "IntegerLiteral",
-      "offset": 20634,
+      "offset": 20642,
       "length": 4,
       "value": "1"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Utils\/DfnUtil.swift",
       "kind": "IntegerLiteral",
-      "offset": 20631,
+      "offset": 20639,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Utils\/DfnUtil.swift",
       "kind": "IntegerLiteral",
-      "offset": 20634,
+      "offset": 20642,
       "length": 4,
       "value": "1"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Utils\/DfnUtil.swift",
       "kind": "StringLiteral",
-      "offset": 20668,
+      "offset": 20676,
       "length": 9,
       "value": "\"AdBrixRmKit.DfnResult\""
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Utils\/DfnUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 20958,
+      "length": 8,
+      "value": "\"AdBrixRmKit.CIResult\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Data\/InAppMessage\/InAppMessageSqliteStore.swift",
@@ -30330,1008 +30605,1008 @@
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 20357,
+      "offset": 21794,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 21579,
+      "offset": 23016,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "StringLiteral",
-      "offset": 25173,
+      "offset": 26610,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "StringLiteral",
-      "offset": 25198,
+      "offset": 26635,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "StringLiteral",
-      "offset": 25223,
+      "offset": 26660,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "StringLiteral",
-      "offset": 25248,
+      "offset": 26685,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 83857,
+      "offset": 86430,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 83890,
+      "offset": 86463,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 83923,
+      "offset": 86496,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 83857,
+      "offset": 86430,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 83890,
+      "offset": 86463,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 83923,
+      "offset": 86496,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 84087,
+      "offset": 86660,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 84100,
+      "offset": 86673,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 84110,
+      "offset": 86683,
       "length": 3,
       "value": "120"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 84087,
+      "offset": 86660,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 84100,
+      "offset": 86673,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 84110,
+      "offset": 86683,
       "length": 3,
       "value": "120"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 84501,
+      "offset": 87074,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 84512,
+      "offset": 87085,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 84523,
+      "offset": 87096,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 84533,
+      "offset": 87106,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 84546,
+      "offset": 87119,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 84557,
+      "offset": 87130,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 84501,
+      "offset": 87074,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 84512,
+      "offset": 87085,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 84523,
+      "offset": 87096,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 84533,
+      "offset": 87106,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 84546,
+      "offset": 87119,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 84557,
+      "offset": 87130,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 84723,
+      "offset": 87296,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 84748,
+      "offset": 87321,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 84774,
+      "offset": 87347,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 84723,
+      "offset": 87296,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 84748,
+      "offset": 87321,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 84774,
+      "offset": 87347,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 85026,
+      "offset": 87599,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 85085,
+      "offset": 87658,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 85144,
+      "offset": 87717,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 85203,
+      "offset": 87776,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 85262,
+      "offset": 87835,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 85321,
+      "offset": 87894,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 85380,
+      "offset": 87953,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 85439,
+      "offset": 88012,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 85498,
+      "offset": 88071,
       "length": 1,
       "value": "9"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 85557,
+      "offset": 88130,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 85617,
+      "offset": 88190,
       "length": 2,
       "value": "11"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 85677,
+      "offset": 88250,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 85737,
+      "offset": 88310,
       "length": 2,
       "value": "13"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 85026,
+      "offset": 87599,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 85085,
+      "offset": 87658,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 85144,
+      "offset": 87717,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 85203,
+      "offset": 87776,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 85262,
+      "offset": 87835,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 85321,
+      "offset": 87894,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 85380,
+      "offset": 87953,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 85439,
+      "offset": 88012,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 85498,
+      "offset": 88071,
       "length": 1,
       "value": "9"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 85557,
+      "offset": 88130,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 85617,
+      "offset": 88190,
       "length": 2,
       "value": "11"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 85677,
+      "offset": 88250,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 85737,
+      "offset": 88310,
       "length": 2,
       "value": "13"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 87764,
+      "offset": 90337,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 87823,
+      "offset": 90396,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 87882,
+      "offset": 90455,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 87941,
+      "offset": 90514,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 88000,
+      "offset": 90573,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 88059,
+      "offset": 90632,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 88118,
+      "offset": 90691,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 88177,
+      "offset": 90750,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 88236,
+      "offset": 90809,
       "length": 1,
       "value": "9"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 88295,
+      "offset": 90868,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 87764,
+      "offset": 90337,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 87823,
+      "offset": 90396,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 87882,
+      "offset": 90455,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 87941,
+      "offset": 90514,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 88000,
+      "offset": 90573,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 88059,
+      "offset": 90632,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 88118,
+      "offset": 90691,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 88177,
+      "offset": 90750,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 88236,
+      "offset": 90809,
       "length": 1,
       "value": "9"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 88295,
+      "offset": 90868,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 89896,
+      "offset": 92469,
       "length": 1,
       "value": "1"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 89918,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 89940,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 89962,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 89984,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 90006,
-      "length": 1,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 90028,
-      "length": 1,
-      "value": "7"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 90050,
-      "length": 1,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 90072,
-      "length": 1,
-      "value": "9"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 90094,
-      "length": 2,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 90117,
-      "length": 2,
-      "value": "11"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 90140,
-      "length": 2,
-      "value": "12"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 90163,
-      "length": 2,
-      "value": "13"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 90186,
-      "length": 2,
-      "value": "14"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 89896,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 89918,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 89940,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 89962,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 89984,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 90006,
-      "length": 1,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 90028,
-      "length": 1,
-      "value": "7"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 90050,
-      "length": 1,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 90072,
-      "length": 1,
-      "value": "9"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 90094,
-      "length": 2,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 90117,
-      "length": 2,
-      "value": "11"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 90140,
-      "length": 2,
-      "value": "12"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 90163,
-      "length": 2,
-      "value": "13"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 90186,
-      "length": 2,
-      "value": "14"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 91490,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 91530,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 91570,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 91610,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 91490,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 91530,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 91570,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 91610,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 92283,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 92335,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 92387,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 92439,
-      "length": 1,
-      "value": "4"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
       "offset": 92491,
       "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 92543,
-      "length": 1,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 92595,
-      "length": 1,
-      "value": "7"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 92647,
-      "length": 1,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 92699,
-      "length": 1,
-      "value": "9"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 92751,
-      "length": 2,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 92804,
-      "length": 2,
-      "value": "11"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 92283,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
-      "kind": "IntegerLiteral",
-      "offset": 92335,
-      "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 92387,
+      "offset": 92513,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 92439,
+      "offset": 92535,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 92491,
+      "offset": 92557,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 92543,
+      "offset": 92579,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 92595,
+      "offset": 92601,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 92647,
+      "offset": 92623,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 92699,
+      "offset": 92645,
       "length": 1,
       "value": "9"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 92751,
+      "offset": 92667,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "IntegerLiteral",
-      "offset": 92804,
+      "offset": 92690,
+      "length": 2,
+      "value": "11"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 92713,
+      "length": 2,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 92736,
+      "length": 2,
+      "value": "13"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 92759,
+      "length": 2,
+      "value": "14"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 92469,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 92491,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 92513,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 92535,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 92557,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 92579,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 92601,
+      "length": 1,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 92623,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 92645,
+      "length": 1,
+      "value": "9"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 92667,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 92690,
+      "length": 2,
+      "value": "11"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 92713,
+      "length": 2,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 92736,
+      "length": 2,
+      "value": "13"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 92759,
+      "length": 2,
+      "value": "14"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 94063,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 94103,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 94143,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 94183,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 94063,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 94103,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 94143,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 94183,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 94856,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 94908,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 94960,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 95012,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 95064,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 95116,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 95168,
+      "length": 1,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 95220,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 95272,
+      "length": 1,
+      "value": "9"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 95324,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 95377,
+      "length": 2,
+      "value": "11"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 94856,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 94908,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 94960,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 95012,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 95064,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 95116,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 95168,
+      "length": 1,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 95220,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 95272,
+      "length": 1,
+      "value": "9"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 95324,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 95377,
       "length": 2,
       "value": "11"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "Dictionary",
-      "offset": 94462,
+      "offset": 97035,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "Dictionary",
-      "offset": 94498,
+      "offset": 97071,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "Dictionary",
-      "offset": 95386,
+      "offset": 97959,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "Dictionary",
-      "offset": 95422,
+      "offset": 97995,
       "length": 3,
       "value": "[]"
     },
@@ -31345,7 +31620,7 @@
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/V1_Compat\/AdBrixRM.swift",
       "kind": "StringLiteral",
-      "offset": 98827,
+      "offset": 101400,
       "length": 20,
       "value": "\"AdBrixRmKit.OsPushEnableObserver\""
     },

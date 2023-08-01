@@ -394,7 +394,39 @@ SWIFT_CLASS("_TtC11AdBrixRmKit8AdBrixRM")
 - (void)setUserPropertiesWithAttrWithAttrModel:(AdBrixRmAttrModel * _Nonnull)attrModel;
 - (void)clearUserProperties SWIFT_DEPRECATED;
 - (void)setKakaoIdWithKakaoId:(NSString * _Nonnull)kakaoId SWIFT_DEPRECATED_MSG("use setKakaoId(kakaoId:completion:) instead");
+/// This function is used to set a phone number for a user. ex) 821012345678
+/// \param number The phone number to set for the user. This must conform to the E.164 standard but without “+”. An example of an E.164 formatted number without “+” could be “821012345678”. For more information on E.164, refer to <a href="https://en.wikipedia.org/wiki/E.164">E.164 - Wikipedia</a>
+///
+/// \param completion A closure that is called when the operation is complete. It passes a <code>SetCiProfileResult</code> object that describes the result of the operation.
+/// <ul>
+///   <li>
+///     <code>isSuccess</code>: A Boolean value indicating whether the operation was successful.
+///   </li>
+///   <li>
+///     <code>resultCode</code>: A result code from server
+///   </li>
+///   <li>
+///     <code>resultMessage</code>: A result message from server
+///   </li>
+/// </ul>
+///
 - (void)setPhoneNumberWithNumber:(NSString * _Nonnull)number completion:(void (^ _Nonnull)(SetCiProfileResult * _Nonnull))completion;
+/// This function is used to set a Kakao ID for a user. KakaoId must be a 10-digit ID from Kakao Sync API
+/// \param kakaoId The Kakao ID to set for the user. This must be a 10-digit ID obtained from the Kakao Sync API.
+///
+/// \param completion A closure that is called when the operation is complete. It passes a <code>SetCiProfileResult</code> object that describes the result of the operation.
+/// <ul>
+///   <li>
+///     <code>isSuccess</code>: A Boolean value indicating whether the operation was successful.
+///   </li>
+///   <li>
+///     <code>resultCode</code>: A result code from server
+///   </li>
+///   <li>
+///     <code>resultMessage</code>: A result message from server
+///   </li>
+/// </ul>
+///
 - (void)setKakaoIdWithKakaoId:(NSString * _Nonnull)kakaoId completion:(void (^ _Nonnull)(SetCiProfileResult * _Nonnull))completion;
 - (void)setUserCiWithAttrWithAttrModel:(AdBrixRmAttrModel * _Nonnull)attrModel SWIFT_DEPRECATED;
 - (void)setLocationWithLatitude:(double)latitude longitude:(double)longitude SWIFT_DEPRECATED;
@@ -581,7 +613,7 @@ SWIFT_CLASS("_TtC11AdBrixRmKit8AdBrixRM")
 - (void)getAllInAppMessageWithCompletion:(void (^ _Nonnull)(DfnInAppMessageResult * _Nonnull))completion;
 - (void)openInAppMessageWithCampaignId:(NSString * _Nonnull)campaignId completion:(void (^ _Nonnull)(enum Completion))completion;
 - (void)fetchInAppMessageWithCompletion:(void (^ _Nonnull)(DfnInAppMessageFetchResult * _Nonnull))completion;
-- (void)setInAppMessageFetchModeWithMode:(enum DfnInAppMessageFetchMode)mode;
+- (void)setInAppMessageFetchModeWithMode:(enum DfnInAppMessageFetchMode)mode SWIFT_DEPRECATED;
 - (void)setInAppMessageTokenWithToken:(NSString * _Nonnull)token;
 - (void)pauseInAppMessage;
 - (void)resumeInAppMessage;
@@ -769,6 +801,15 @@ SWIFT_PROTOCOL("_TtP11AdBrixRmKit26AdBrixRmPushRemoteDelegate_")
 - (void)pushRemoteCallbackWithData:(NSDictionary<NSString *, id> * _Nullable)data state:(enum UIApplicationState)state;
 @end
 
+
+SWIFT_CLASS("_TtC11AdBrixRmKit8CIResult")
+@interface CIResult : NSObject
+@property (nonatomic, readonly) BOOL isSuccess;
+@property (nonatomic, readonly, copy) NSString * _Nullable resultMessage;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 typedef SWIFT_ENUM(NSInteger, Completion, open) {
   CompletionSuccess = 0,
   CompletionFail = 1,
@@ -912,22 +953,19 @@ SWIFT_CLASS("_TtC11AdBrixRmKit7DfnUtil")
 
 
 SWIFT_CLASS("_TtC11AdBrixRmKit21GetAllCiProfileResult")
-@interface GetAllCiProfileResult : DfnResult
-- (nonnull instancetype)initWithIsSuccess:(BOOL)isSuccess error:(NSError * _Nullable)error SWIFT_UNAVAILABLE;
+@interface GetAllCiProfileResult : CIResult
 @end
 
 
 SWIFT_CLASS("_TtC11AdBrixRmKit18GetCiProfileResult")
-@interface GetCiProfileResult : DfnResult
+@interface GetCiProfileResult : CIResult
 @property (nonatomic, readonly, copy) NSString * _Nullable value;
-- (nonnull instancetype)initWithIsSuccess:(BOOL)isSuccess error:(NSError * _Nullable)error SWIFT_UNAVAILABLE;
 @end
 
 
 SWIFT_CLASS("_TtC11AdBrixRmKit21GetSubscriptionResult")
-@interface GetSubscriptionResult : DfnResult
+@interface GetSubscriptionResult : CIResult
 @property (nonatomic, readonly, strong) SubscriptionStatus * _Nullable value;
-- (nonnull instancetype)initWithIsSuccess:(BOOL)isSuccess error:(NSError * _Nullable)error SWIFT_UNAVAILABLE;
 @end
 
 
@@ -946,14 +984,12 @@ SWIFT_CLASS("_TtC11AdBrixRmKit11KakaoButton")
 
 
 SWIFT_CLASS("_TtC11AdBrixRmKit18SetCiProfileResult")
-@interface SetCiProfileResult : DfnResult
-- (nonnull instancetype)initWithIsSuccess:(BOOL)isSuccess error:(NSError * _Nullable)error SWIFT_UNAVAILABLE;
+@interface SetCiProfileResult : CIResult
 @end
 
 
 SWIFT_CLASS("_TtC11AdBrixRmKit21SetSubscriptionResult")
-@interface SetSubscriptionResult : DfnResult
-- (nonnull instancetype)initWithIsSuccess:(BOOL)isSuccess error:(NSError * _Nullable)error SWIFT_UNAVAILABLE;
+@interface SetSubscriptionResult : CIResult
 @end
 
 enum _Type : NSInteger;
@@ -1448,7 +1484,39 @@ SWIFT_CLASS("_TtC11AdBrixRmKit8AdBrixRM")
 - (void)setUserPropertiesWithAttrWithAttrModel:(AdBrixRmAttrModel * _Nonnull)attrModel;
 - (void)clearUserProperties SWIFT_DEPRECATED;
 - (void)setKakaoIdWithKakaoId:(NSString * _Nonnull)kakaoId SWIFT_DEPRECATED_MSG("use setKakaoId(kakaoId:completion:) instead");
+/// This function is used to set a phone number for a user. ex) 821012345678
+/// \param number The phone number to set for the user. This must conform to the E.164 standard but without “+”. An example of an E.164 formatted number without “+” could be “821012345678”. For more information on E.164, refer to <a href="https://en.wikipedia.org/wiki/E.164">E.164 - Wikipedia</a>
+///
+/// \param completion A closure that is called when the operation is complete. It passes a <code>SetCiProfileResult</code> object that describes the result of the operation.
+/// <ul>
+///   <li>
+///     <code>isSuccess</code>: A Boolean value indicating whether the operation was successful.
+///   </li>
+///   <li>
+///     <code>resultCode</code>: A result code from server
+///   </li>
+///   <li>
+///     <code>resultMessage</code>: A result message from server
+///   </li>
+/// </ul>
+///
 - (void)setPhoneNumberWithNumber:(NSString * _Nonnull)number completion:(void (^ _Nonnull)(SetCiProfileResult * _Nonnull))completion;
+/// This function is used to set a Kakao ID for a user. KakaoId must be a 10-digit ID from Kakao Sync API
+/// \param kakaoId The Kakao ID to set for the user. This must be a 10-digit ID obtained from the Kakao Sync API.
+///
+/// \param completion A closure that is called when the operation is complete. It passes a <code>SetCiProfileResult</code> object that describes the result of the operation.
+/// <ul>
+///   <li>
+///     <code>isSuccess</code>: A Boolean value indicating whether the operation was successful.
+///   </li>
+///   <li>
+///     <code>resultCode</code>: A result code from server
+///   </li>
+///   <li>
+///     <code>resultMessage</code>: A result message from server
+///   </li>
+/// </ul>
+///
 - (void)setKakaoIdWithKakaoId:(NSString * _Nonnull)kakaoId completion:(void (^ _Nonnull)(SetCiProfileResult * _Nonnull))completion;
 - (void)setUserCiWithAttrWithAttrModel:(AdBrixRmAttrModel * _Nonnull)attrModel SWIFT_DEPRECATED;
 - (void)setLocationWithLatitude:(double)latitude longitude:(double)longitude SWIFT_DEPRECATED;
@@ -1635,7 +1703,7 @@ SWIFT_CLASS("_TtC11AdBrixRmKit8AdBrixRM")
 - (void)getAllInAppMessageWithCompletion:(void (^ _Nonnull)(DfnInAppMessageResult * _Nonnull))completion;
 - (void)openInAppMessageWithCampaignId:(NSString * _Nonnull)campaignId completion:(void (^ _Nonnull)(enum Completion))completion;
 - (void)fetchInAppMessageWithCompletion:(void (^ _Nonnull)(DfnInAppMessageFetchResult * _Nonnull))completion;
-- (void)setInAppMessageFetchModeWithMode:(enum DfnInAppMessageFetchMode)mode;
+- (void)setInAppMessageFetchModeWithMode:(enum DfnInAppMessageFetchMode)mode SWIFT_DEPRECATED;
 - (void)setInAppMessageTokenWithToken:(NSString * _Nonnull)token;
 - (void)pauseInAppMessage;
 - (void)resumeInAppMessage;
@@ -1823,6 +1891,15 @@ SWIFT_PROTOCOL("_TtP11AdBrixRmKit26AdBrixRmPushRemoteDelegate_")
 - (void)pushRemoteCallbackWithData:(NSDictionary<NSString *, id> * _Nullable)data state:(enum UIApplicationState)state;
 @end
 
+
+SWIFT_CLASS("_TtC11AdBrixRmKit8CIResult")
+@interface CIResult : NSObject
+@property (nonatomic, readonly) BOOL isSuccess;
+@property (nonatomic, readonly, copy) NSString * _Nullable resultMessage;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 typedef SWIFT_ENUM(NSInteger, Completion, open) {
   CompletionSuccess = 0,
   CompletionFail = 1,
@@ -1966,22 +2043,19 @@ SWIFT_CLASS("_TtC11AdBrixRmKit7DfnUtil")
 
 
 SWIFT_CLASS("_TtC11AdBrixRmKit21GetAllCiProfileResult")
-@interface GetAllCiProfileResult : DfnResult
-- (nonnull instancetype)initWithIsSuccess:(BOOL)isSuccess error:(NSError * _Nullable)error SWIFT_UNAVAILABLE;
+@interface GetAllCiProfileResult : CIResult
 @end
 
 
 SWIFT_CLASS("_TtC11AdBrixRmKit18GetCiProfileResult")
-@interface GetCiProfileResult : DfnResult
+@interface GetCiProfileResult : CIResult
 @property (nonatomic, readonly, copy) NSString * _Nullable value;
-- (nonnull instancetype)initWithIsSuccess:(BOOL)isSuccess error:(NSError * _Nullable)error SWIFT_UNAVAILABLE;
 @end
 
 
 SWIFT_CLASS("_TtC11AdBrixRmKit21GetSubscriptionResult")
-@interface GetSubscriptionResult : DfnResult
+@interface GetSubscriptionResult : CIResult
 @property (nonatomic, readonly, strong) SubscriptionStatus * _Nullable value;
-- (nonnull instancetype)initWithIsSuccess:(BOOL)isSuccess error:(NSError * _Nullable)error SWIFT_UNAVAILABLE;
 @end
 
 
@@ -2000,14 +2074,12 @@ SWIFT_CLASS("_TtC11AdBrixRmKit11KakaoButton")
 
 
 SWIFT_CLASS("_TtC11AdBrixRmKit18SetCiProfileResult")
-@interface SetCiProfileResult : DfnResult
-- (nonnull instancetype)initWithIsSuccess:(BOOL)isSuccess error:(NSError * _Nullable)error SWIFT_UNAVAILABLE;
+@interface SetCiProfileResult : CIResult
 @end
 
 
 SWIFT_CLASS("_TtC11AdBrixRmKit21SetSubscriptionResult")
-@interface SetSubscriptionResult : DfnResult
-- (nonnull instancetype)initWithIsSuccess:(BOOL)isSuccess error:(NSError * _Nullable)error SWIFT_UNAVAILABLE;
+@interface SetSubscriptionResult : CIResult
 @end
 
 enum _Type : NSInteger;
