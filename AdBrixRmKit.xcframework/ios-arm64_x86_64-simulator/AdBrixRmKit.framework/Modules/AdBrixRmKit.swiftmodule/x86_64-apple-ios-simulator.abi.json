@@ -22483,7 +22483,7 @@
       "kind": "StringLiteral",
       "offset": 227,
       "length": 9,
-      "value": "\"2.6.0.2\""
+      "value": "\"2.6.0.3\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Domain\/Constants.swift",
@@ -26933,441 +26933,441 @@
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Data\/InAppMessage\/InAppMessageSqliteStore.swift",
       "kind": "StringLiteral",
-      "offset": 85746,
+      "offset": 85725,
       "length": 14,
       "value": "\"InAppMessage\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Data\/InAppMessage\/InAppMessageSqliteStore.swift",
       "kind": "StringLiteral",
-      "offset": 85795,
+      "offset": 85774,
       "length": 12,
       "value": "\"CampaignId\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Data\/InAppMessage\/InAppMessageSqliteStore.swift",
       "kind": "StringLiteral",
-      "offset": 85844,
+      "offset": 85823,
       "length": 14,
       "value": "\"ExternalAttr\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Data\/InAppMessage\/InAppMessageSqliteStore.swift",
       "kind": "StringLiteral",
-      "offset": 85897,
+      "offset": 85876,
       "length": 16,
       "value": "\"TimezoneOffset\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Data\/InAppMessage\/InAppMessageSqliteStore.swift",
       "kind": "StringLiteral",
-      "offset": 85950,
+      "offset": 85929,
       "length": 14,
       "value": "\"TimezoneType\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Data\/InAppMessage\/InAppMessageSqliteStore.swift",
       "kind": "StringLiteral",
-      "offset": 85996,
+      "offset": 85975,
       "length": 10,
       "value": "\"Position\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Data\/InAppMessage\/InAppMessageSqliteStore.swift",
       "kind": "StringLiteral",
-      "offset": 86034,
+      "offset": 86013,
       "length": 6,
       "value": "\"Type\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Data\/InAppMessage\/InAppMessageSqliteStore.swift",
       "kind": "StringLiteral",
-      "offset": 86068,
+      "offset": 86047,
       "length": 6,
       "value": "\"html\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Data\/InAppMessage\/InAppMessageSqliteStore.swift",
       "kind": "StringLiteral",
-      "offset": 86115,
+      "offset": 86094,
       "length": 16,
       "value": "\"BgStyleBgColor\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Data\/InAppMessage\/InAppMessageSqliteStore.swift",
       "kind": "StringLiteral",
-      "offset": 86177,
+      "offset": 86156,
       "length": 21,
       "value": "\"BgStyleOverlayColor\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Data\/InAppMessage\/InAppMessageSqliteStore.swift",
       "kind": "StringLiteral",
-      "offset": 86247,
+      "offset": 86226,
       "length": 24,
       "value": "\"FrequencyCapPerSession\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Data\/InAppMessage\/InAppMessageSqliteStore.swift",
       "kind": "StringLiteral",
-      "offset": 86317,
+      "offset": 86296,
       "length": 21,
       "value": "\"FrequencyCapPerUser\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Data\/InAppMessage\/InAppMessageSqliteStore.swift",
       "kind": "StringLiteral",
-      "offset": 86397,
+      "offset": 86376,
       "length": 32,
       "value": "\"FrequencyCapForPeriodInMinutes\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Data\/InAppMessage\/InAppMessageSqliteStore.swift",
       "kind": "StringLiteral",
-      "offset": 86488,
+      "offset": 86467,
       "length": 32,
       "value": "\"FrequencyCapForPeriodPerPeriod\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Data\/InAppMessage\/InAppMessageSqliteStore.swift",
       "kind": "StringLiteral",
-      "offset": 86558,
+      "offset": 86537,
       "length": 15,
       "value": "\"StartDateTime\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Data\/InAppMessage\/InAppMessageSqliteStore.swift",
       "kind": "StringLiteral",
-      "offset": 86609,
+      "offset": 86588,
       "length": 13,
       "value": "\"EndDateTime\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Data\/InAppMessage\/InAppMessageSqliteStore.swift",
       "kind": "StringLiteral",
-      "offset": 86667,
+      "offset": 86646,
       "length": 17,
       "value": "\"LastUpdatedTime\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Data\/InAppMessage\/InAppMessageSqliteStore.swift",
       "kind": "StringLiteral",
-      "offset": 86718,
+      "offset": 86697,
       "length": 11,
       "value": "\"ExtConfig\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Data\/InAppMessage\/InAppMessageSqliteStore.swift",
       "kind": "StringLiteral",
-      "offset": 86768,
+      "offset": 86747,
       "length": 28,
       "value": "\"InAppMessageIdentifierType\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Data\/InAppMessage\/InAppMessageSqliteStore.swift",
       "kind": "StringLiteral",
-      "offset": 89264,
+      "offset": 89243,
       "length": 10,
       "value": "\"Triggers\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Data\/InAppMessage\/InAppMessageSqliteStore.swift",
       "kind": "StringLiteral",
-      "offset": 89309,
+      "offset": 89288,
       "length": 12,
       "value": "\"CampaignId\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Data\/InAppMessage\/InAppMessageSqliteStore.swift",
       "kind": "StringLiteral",
-      "offset": 89349,
+      "offset": 89328,
       "length": 6,
       "value": "\"Type\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Data\/InAppMessage\/InAppMessageSqliteStore.swift",
       "kind": "StringLiteral",
-      "offset": 89389,
+      "offset": 89368,
       "length": 11,
       "value": "\"EventName\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Data\/InAppMessage\/InAppMessageSqliteStore.swift",
       "kind": "StringLiteral",
-      "offset": 89432,
+      "offset": 89411,
       "length": 10,
       "value": "\"Priority\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Data\/InAppMessage\/InAppMessageSqliteStore.swift",
       "kind": "StringLiteral",
-      "offset": 89480,
+      "offset": 89459,
       "length": 17,
       "value": "\"EventProperties\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Data\/InAppMessage\/InAppMessageSqliteStore.swift",
       "kind": "StringLiteral",
-      "offset": 89536,
+      "offset": 89515,
       "length": 24,
       "value": "\"TriggersIdentifierType\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Data\/InAppMessage\/InAppMessageSqliteStore.swift",
       "kind": "StringLiteral",
-      "offset": 90502,
+      "offset": 90481,
       "length": 15,
       "value": "\"AvailableTime\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Data\/InAppMessage\/InAppMessageSqliteStore.swift",
       "kind": "StringLiteral",
-      "offset": 90552,
+      "offset": 90531,
       "length": 12,
       "value": "\"CampaignId\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Data\/InAppMessage\/InAppMessageSqliteStore.swift",
       "kind": "StringLiteral",
-      "offset": 90591,
+      "offset": 90570,
       "length": 5,
       "value": "\"Day\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Data\/InAppMessage\/InAppMessageSqliteStore.swift",
       "kind": "StringLiteral",
-      "offset": 90629,
+      "offset": 90608,
       "length": 10,
       "value": "\"StartMin\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Data\/InAppMessage\/InAppMessageSqliteStore.swift",
       "kind": "StringLiteral",
-      "offset": 90670,
+      "offset": 90649,
       "length": 8,
       "value": "\"EndMin\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Data\/InAppMessage\/InAppMessageSqliteStore.swift",
       "kind": "StringLiteral",
-      "offset": 90717,
+      "offset": 90696,
       "length": 16,
       "value": "\"IdentifierType\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Data\/InAppMessage\/InAppMessageSqliteStore.swift",
       "kind": "StringLiteral",
-      "offset": 91579,
+      "offset": 91558,
       "length": 22,
       "value": "\"UnAvailableTimeTable\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Data\/InAppMessage\/InAppMessageSqliteStore.swift",
       "kind": "StringLiteral",
-      "offset": 91636,
+      "offset": 91615,
       "length": 12,
       "value": "\"CampaignId\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Data\/InAppMessage\/InAppMessageSqliteStore.swift",
       "kind": "StringLiteral",
-      "offset": 91687,
+      "offset": 91666,
       "length": 16,
       "value": "\"UnavailableDay\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Data\/InAppMessage\/InAppMessageSqliteStore.swift",
       "kind": "StringLiteral",
-      "offset": 91743,
+      "offset": 91722,
       "length": 17,
       "value": "\"UnavailableTime\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Data\/InAppMessage\/InAppMessageSqliteStore.swift",
       "kind": "StringLiteral",
-      "offset": 91796,
+      "offset": 91775,
       "length": 24,
       "value": "\"UnavailableEndDateTime\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Data\/InAppMessage\/InAppMessageSqliteStore.swift",
       "kind": "StringLiteral",
-      "offset": 91859,
+      "offset": 91838,
       "length": 27,
       "value": "\"UnavailableIdentifierType\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Data\/InAppMessage\/InAppMessageSqliteStore.swift",
       "kind": "StringLiteral",
-      "offset": 91917,
+      "offset": 91896,
       "length": 19,
       "value": "\"UnavailableUserId\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Data\/InAppMessage\/InAppMessageSqliteStore.swift",
       "kind": "StringLiteral",
-      "offset": 92857,
+      "offset": 92836,
       "length": 18,
       "value": "\"CurrentFrequency\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Data\/InAppMessage\/InAppMessageSqliteStore.swift",
       "kind": "StringLiteral",
-      "offset": 92910,
+      "offset": 92889,
       "length": 12,
       "value": "\"CampaignId\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Data\/InAppMessage\/InAppMessageSqliteStore.swift",
       "kind": "StringLiteral",
-      "offset": 92979,
+      "offset": 92958,
       "length": 31,
       "value": "\"CurrentFrequencyCapPerSession\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Data\/InAppMessage\/InAppMessageSqliteStore.swift",
       "kind": "StringLiteral",
-      "offset": 93064,
+      "offset": 93043,
       "length": 28,
       "value": "\"CurrentFrequencyCapPerUser\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Data\/InAppMessage\/InAppMessageSqliteStore.swift",
       "kind": "StringLiteral",
-      "offset": 93147,
+      "offset": 93126,
       "length": 29,
       "value": "\"FrequencyLastGroupStartTime\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Data\/InAppMessage\/InAppMessageSqliteStore.swift",
       "kind": "StringLiteral",
-      "offset": 93226,
+      "offset": 93205,
       "length": 25,
       "value": "\"FrequencyLastGroupCount\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Data\/InAppMessage\/InAppMessageSqliteStore.swift",
       "kind": "StringLiteral",
-      "offset": 93290,
+      "offset": 93269,
       "length": 25,
       "value": "\"FrequencyIdentifierType\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Data\/InAppMessage\/InAppMessageSqliteStore.swift",
       "kind": "StringLiteral",
-      "offset": 93346,
+      "offset": 93325,
       "length": 17,
       "value": "\"FrequencyUserId\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Data\/InAppMessage\/InAppMessageSqliteStore.swift",
       "kind": "StringLiteral",
-      "offset": 93399,
+      "offset": 93378,
       "length": 22,
       "value": "\"FrequencyEndDateTime\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Data\/InAppMessage\/InAppMessageSqliteStore.swift",
       "kind": "StringLiteral",
-      "offset": 94647,
+      "offset": 94626,
       "length": 7,
       "value": "\"Image\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Data\/InAppMessage\/InAppMessageSqliteStore.swift",
       "kind": "StringLiteral",
-      "offset": 94689,
+      "offset": 94668,
       "length": 12,
       "value": "\"CampaignId\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Data\/InAppMessage\/InAppMessageSqliteStore.swift",
       "kind": "StringLiteral",
-      "offset": 94736,
+      "offset": 94715,
       "length": 13,
       "value": "\"Orientation\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Data\/InAppMessage\/InAppMessageSqliteStore.swift",
       "kind": "StringLiteral",
-      "offset": 94776,
+      "offset": 94755,
       "length": 5,
       "value": "\"Url\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Data\/InAppMessage\/InAppMessageSqliteStore.swift",
       "kind": "StringLiteral",
-      "offset": 94822,
+      "offset": 94801,
       "length": 17,
       "value": "\"ImagePathString\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Data\/InAppMessage\/InAppMessageSqliteStore.swift",
       "kind": "StringLiteral",
-      "offset": 94875,
+      "offset": 94854,
       "length": 13,
       "value": "\"ClickAction\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Data\/InAppMessage\/InAppMessageSqliteStore.swift",
       "kind": "StringLiteral",
-      "offset": 94925,
+      "offset": 94904,
       "length": 13,
       "value": "\"IsFirstShow\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Data\/InAppMessage\/InAppMessageSqliteStore.swift",
       "kind": "StringLiteral",
-      "offset": 95880,
+      "offset": 95859,
       "length": 13,
       "value": "\"imageBitmap\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Data\/InAppMessage\/InAppMessageSqliteStore.swift",
       "kind": "StringLiteral",
-      "offset": 95917,
+      "offset": 95896,
       "length": 10,
       "value": "\"imageURL\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Data\/InAppMessage\/InAppMessageSqliteStore.swift",
       "kind": "StringLiteral",
-      "offset": 95954,
+      "offset": 95933,
       "length": 14,
       "value": "\"isDownLoaded\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Data\/InAppMessage\/InAppMessageSqliteStore.swift",
       "kind": "StringLiteral",
-      "offset": 95994,
+      "offset": 95973,
       "length": 13,
       "value": "\"clickAction\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Data\/InAppMessage\/InAppMessageSqliteStore.swift",
       "kind": "StringLiteral",
-      "offset": 95880,
+      "offset": 95859,
       "length": 13,
       "value": "\"imageBitmap\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Data\/InAppMessage\/InAppMessageSqliteStore.swift",
       "kind": "StringLiteral",
-      "offset": 95917,
+      "offset": 95896,
       "length": 10,
       "value": "\"imageURL\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Data\/InAppMessage\/InAppMessageSqliteStore.swift",
       "kind": "StringLiteral",
-      "offset": 95954,
+      "offset": 95933,
       "length": 14,
       "value": "\"isDownLoaded\""
     },
     {
       "filePath": "\/Users\/jimmy.gangsehun\/Desktop\/SDK\/AdBrixRmKit\/Data\/InAppMessage\/InAppMessageSqliteStore.swift",
       "kind": "StringLiteral",
-      "offset": 95994,
+      "offset": 95973,
       "length": 13,
       "value": "\"clickAction\""
     },
